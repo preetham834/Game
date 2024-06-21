@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('background.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Container to center the game panel and winner panel */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Styling for game panel */
+.game-panel {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Game title */
+.game-title {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+/* Player panels */
+.player-0-panel,
+.player-1-panel {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #444;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.player-0-panel.active,
+.player-1-panel.active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Player names */
+.player-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Player scores and current scores */
+.player-score,
+.player-current-score {
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.player-current-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-new,
+.btn-roll,
+.btn-hold,
+.btn-new-2 {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    border: none;
+}
+
+/* Dice image */
+.dice {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* Winner panel */
+.winner-panel {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.winner-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
